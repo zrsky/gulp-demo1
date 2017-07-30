@@ -1,0 +1,21 @@
+@mainColor: #ccc;
+@fontSize: 12px;
+
+body {
+	background: @mainColor;
+	font-size: @fontSize;
+	a {
+		text-decoration: none;
+	}
+	div {
+		.radius(50%);
+	}
+	 
+}
+.radius(@r){
+	-webkit-webkit-border-radius: r;
+	-moz-webkit-border-radius: r;
+	-ms-webkit-border-radius: r;
+	-o-webkit-border-radius: r;
+	border-radius: r;	
+}
